@@ -136,6 +136,16 @@
             transform: translateY(-2px);
         }
 
+        .nav-right a.active {
+            background-color: #d6336c;  /* darker pink for active */
+            color: white;
+            border-color: #b30059;
+            cursor: default;            /* make it look unclickable */
+            pointer-events: none;       /* disable clicks on active */
+            transform: none;            /* remove hover effects */
+        }
+
+
             /* The "Explore:" button group below banner */
         .explore {
                 display: flex;
@@ -201,6 +211,22 @@
     <a href="theories.html">Theories</a>
     <a href="about.html">About</a>
   </div>
+
+  <script>
+  // Get current page filename, e.g. 'timeline.md' or 'content.html'
+  const currentPage = window.location.pathname.split('/').pop();
+
+  // Select all nav links in the navbar
+  const navLinks = document.querySelectorAll('.nav-right a');
+
+  navLinks.forEach(link => {
+    const hrefPage = link.getAttribute('href');
+    if (hrefPage === currentPage) {
+      link.classList.add('active');
+    }
+  });
+  
+</script>
 
   <hr />
 
