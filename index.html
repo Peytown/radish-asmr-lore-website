@@ -6,52 +6,12 @@
   <title>Radish ASMR Lore Archive</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
   <style>
-    /* Navbar styles */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #ffe6ee;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .nav-left {
-      font-weight: bold;
-      color: #d6336c;
-      font-size: 1.2rem;
-    }
-
-    .nav-right a {
-      text-decoration: none;
-      color: #d6336c;
-      background-color: #ffffff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      border: 2px solid #ffb6c1;
-      margin-left: 0.5rem;
-      transition: background-color 0.2s ease, transform 0.2s ease;
-    }
-
-    .nav-right a:hover {
-      background-color: #ffe1ea;
-      transform: translateY(-2px);
-    }
-
-    /* Add padding so content doesn't go under fixed navbar */
     body {
       font-family: 'Fredoka', sans-serif;
       background-color: #fff0f5;
       color: #2b2b2b;
       margin: 0;
-      padding: 5rem 2rem 2rem 2rem; /* top padding to clear navbar */
+      padding: 5rem 2rem 2rem 2rem; /* padding top for fixed navbar */
       line-height: 1.6;
       max-width: 800px;
       margin-left: auto;
@@ -62,7 +22,6 @@
       color: #d6336c;
       font-size: 2rem;
       margin-top: 1rem;
-      text-align: center;
     }
 
     h3 {
@@ -104,19 +63,96 @@
       width: 100%;
       border-radius: 12px;
       margin-bottom: 2rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
     }
 
     .intro {
       text-align: center;
       margin-bottom: 2rem;
     }
+
+    /* Fixed top navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: #ffe6ee;
+      padding: 1rem 1rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      border-radius: 0 0 12px 12px;
+    }
+
+    .nav-left a {
+      font-weight: bold;
+      color: #b30059;
+      font-size: 1.2rem;
+    }
+
+    /* Container for nav links on top navbar */
+    .nav-right {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      max-width: 100%;
+      overflow-wrap: break-word;
+    }
+
+    .nav-right a {
+      text-decoration: none;
+      color: #d6336c;
+      background-color: #ffffff;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-weight: bold;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+      border: 2px solid #ffb6c1;
+      white-space: nowrap;
+      margin-right: 0.5rem;
+    }
+
+    .nav-right a:hover {
+      background-color: #ffe1ea;
+      transform: translateY(-2px);
+    }
+
+    /* The "Explore:" button group below banner */
+    .explore {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .explore a {
+      text-decoration: none;
+      color: #d6336c;
+      background-color: #fff0f5;
+      padding: 0.7rem 1.2rem;
+      border-radius: 20px;
+      font-weight: bold;
+      border: 2px solid #ffb6c1;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .explore a:hover {
+      background-color: #ffe1ea;
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body>
-
   <nav class="navbar">
-    <div class="nav-left">🌱 Radish ASMR Lore Archive</div>
+    <div class="nav-left">
+      <a href="index.html">Radish ASMR Lore</a>
+    </div>
     <div class="nav-right">
       <a href="timeline.md">Timeline</a>
       <a href="characters.md">Characters</a>
@@ -132,6 +168,13 @@
   </div>
 
   <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind <strong>Radish ASMR</strong>.</p>
+
+  <div class="explore">
+    <a href="timeline.md">📖 Timeline of Events</a>
+    <a href="characters.md">🧍 Character Profiles</a>
+    <a href="content.md">🔍 Transmission Logs</a>
+    <a href="theories.md">🧠 Fan Theories</a>
+  </div>
 
   <hr />
 
