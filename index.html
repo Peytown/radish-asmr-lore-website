@@ -6,6 +6,34 @@
   <title>Radish ASMR Lore Archive</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
   <style>
+    .navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #ffe6ee;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #d6336c;
+  background-color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  border: 2px solid #ffb6c1;
+}
+
+.navbar a:hover {
+  background-color: #ffe1ea;
+  transform: translateY(-2px);
+}
+
     body {
       font-family: 'Fredoka', sans-serif;
       background-color: #fff0f5;
@@ -75,13 +103,13 @@
 
   <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind <strong>Radish ASMR</strong>.</p>
 
-  <p>Explore:</p>
-  <ul>
-    <li><a href="timeline.md">📖 Timeline of Events</a></li>
-    <li><a href="characters.md">🧍 Character Profiles</a></li>
-    <li><a href="transmissions.md">🔍 Transmission Logs</a></li>
-    <li><a href="theories.md">🧠 Fan Theories</a></li>
-  </ul>
+<nav class="navbar">
+  <a href="timeline.md">📖 Timeline</a>
+  <a href="characters.md">🧍 Characters</a>
+  <a href="transmissions.md">🔍 Transmissions</a>
+  <a href="theories.md">🧠 Theories</a>
+</nav>
+
 
   <blockquote>Want to help? Fork the repo, expand the doc, or submit corrections!</blockquote>
 
