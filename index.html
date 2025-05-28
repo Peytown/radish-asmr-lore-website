@@ -4,63 +4,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Radish ASMR Lore Archive</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Fredoka', sans-serif;
-      background-color: #fff0f5;
-      color: #2b2b2b;
-      margin: 0;
-      padding: 2rem;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
+    /* Navbar styles */
     .navbar {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
       background-color: #ffe6ee;
-      padding: 1rem;
-      border-radius: 12px;
-      margin-bottom: 2rem;
+      padding: 1rem 2rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       flex-wrap: wrap;
     }
 
-    .navbar a {
+    .nav-left {
+      font-weight: bold;
+      color: #d6336c;
+      font-size: 1.2rem;
+    }
+
+    .nav-right a {
       text-decoration: none;
       color: #d6336c;
       background-color: #ffffff;
       padding: 0.5rem 1rem;
       border-radius: 20px;
       font-weight: bold;
-      transition: background-color 0.2s ease, transform 0.2s ease;
       border: 2px solid #ffb6c1;
+      margin-left: 0.5rem;
+      transition: background-color 0.2s ease, transform 0.2s ease;
     }
 
-    .navbar a:hover {
+    .nav-right a:hover {
       background-color: #ffe1ea;
       transform: translateY(-2px);
     }
 
-    .banner {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
-    }
-
-    .intro {
-      text-align: center;
-      margin-bottom: 2rem;
+    /* Add padding so content doesn't go under fixed navbar */
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background-color: #fff0f5;
+      color: #2b2b2b;
+      margin: 0;
+      padding: 5rem 2rem 2rem 2rem; /* top padding to clear navbar */
+      line-height: 1.6;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     h1 {
       color: #d6336c;
       font-size: 2rem;
       margin-top: 1rem;
+      text-align: center;
     }
 
     h3 {
@@ -97,36 +99,44 @@
       background-color: #f0b6c2;
       margin: 2rem 0;
     }
+
+    .banner {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 2rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
   </style>
 </head>
 <body>
 
-  <!-- Banner -->
-  <img src="images/kimochii-classroom-center.jpg" alt="Radish Banner" class="banner" />
-
-  <!-- Navigation -->
   <nav class="navbar">
-    <a href="index.html">Home</a>
-    <a href="timeline.html">Timeline</a>
-    <a href="characters.html">Characters</a>
-    <a href="content.html">Content</a>
-    <a href="theories.html">Theories</a>
+    <div class="nav-left">🌱 Radish ASMR Lore Archive</div>
+    <div class="nav-right">
+      <a href="timeline.md">Timeline</a>
+      <a href="characters.md">Characters</a>
+      <a href="content.md">Content</a>
+      <a href="theories.md">Theories</a>
+    </div>
   </nav>
 
-  <!-- Intro Content -->
+  <img src="images/kimochii-classroom-center.jpg" alt="Radish Banner" class="banner" />
+
   <div class="intro">
     <h1>🌱 Welcome to the Radish ASMR Lore Archive 🌱</h1>
-    <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind <strong>Radish ASMR</strong>.</p>
   </div>
 
-  <!-- Community Note -->
-  <blockquote>Want to help? Fork the repo, expand the doc, or submit corrections!</blockquote>
+  <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind <strong>Radish ASMR</strong>.</p>
 
   <hr />
 
-  <!-- Disclaimer -->
   <h3>❗ Disclaimer</h3>
   <p>This is a <strong>fan-made, non-commercial</strong> site and is not affiliated with the creators of Radish ASMR.</p>
-
+  <blockquote>Want to help? Fork the repo, expand the doc, or submit corrections!</blockquote>
 </body>
 </html>
