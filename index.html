@@ -1,160 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Radish ASMR Lore Archive</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: 'Fredoka', sans-serif;
-      background-color: #fff0f5;
-      color: #2b2b2b;
-      margin: 0;
-      padding: 5rem 2rem 2rem 2rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radish ASMR Lore Archive</title>
 
-    h1 {
-      color: #d6336c;
-      font-size: 2rem;
-      margin-top: 1rem;
-    }
+    <!-- Importing font Fredoka -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet" />
 
-    h3 {
-      color: #b30059;
-      margin-top: 2rem;
-    }
+    <style>
+        /* Global body styles */
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #fff0f5;
+            color: #2b2b2b;
+            margin: 0;
+            padding: 5rem 2rem 2rem 2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
-    a {
-      color: #d6336c;
-      text-decoration: none;
-      font-weight: bold;
-    }
+        /* Headings */
+        h1 {
+            color: #d6336c;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
 
-    a:hover {
+        h3 {
+            color: #b30059;
+            margin-top: 2rem;
+        }
+
+        /* Link styles */
+        a {
+            color: #d6336c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
       text-decoration: underline;
-    }
+         }
 
-    ul {
+        ul {
       padding-left: 1.5rem;
-    }
+        }
 
-    blockquote {
-      border-left: 4px solid #ff85a2;
-      padding-left: 1rem;
-      color: #555;
-      font-style: italic;
-      background-color: #ffe6ee;
-      margin: 1rem 0;
-    }
 
-    hr {
-      border: none;
-      height: 1px;
-      background-color: #f0b6c2;
-      margin: 2rem 0;
-    }
+    /* Quote block style */
+        blockquote {
+            border-left: 4px solid #ff85a2;
+            padding-left: 1rem;
+            color: #555;
+            font-style: italic;
+            background-color: #ffe6ee;
+            margin: 1rem 0;
+        }
 
-    .banner {
-      width: 100%;
-      border-radius: 12px;
-      margin-bottom: 2rem;
-      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-    }
+        /* Horizontal rule for seperating content */
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #f0b6c2;
+            margin: 2rem 0;
+        }
 
-    .intro {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
+        /* Banner image style */
+        .banner {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
 
-    /* Fixed top navbar */
-    .navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      background-color: #ffe6ee;
-      padding: 1rem 1rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      box-sizing: border-box;
-      border-radius: 0 0 12px 12px;
-    }
+        /* Intro container with centered text */
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
 
-    .nav-left a {
-      font-weight: bold;
-      color: #b30059;
-      font-size: 1.2rem;
-    }
+        /* Fixed top navbar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffe6ee;
+            padding: 1rem 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            border-radius: 0 0 12px 12px;
+        }
 
-    /* Container for nav links on top navbar */
-    .nav-right {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      max-width: 100%;
-      overflow-wrap: break-word;
-    }
+        /* Left side of the navbar (site title) */
+        .nav-left a {
+            font-weight: bold;
+            color: #b30059;
+            font-size: 1.2rem;
+        }
 
-    .nav-right a {
-      text-decoration: none;
-      color: #d6336c;
-      background-color: #ffffff;
-      padding: 0.5rem 1rem;
-      border-radius: 20px;
-      font-weight: bold;
-      transition: background-color 0.2s ease, transform 0.2s ease;
-      border: 2px solid #ffb6c1;
-      white-space: nowrap;
-      margin-right: 0.5rem;
-    }
-
-    .nav-right a:hover {
-      background-color: #ffe1ea;
-      transform: translateY(-2px);
-    }
-
-    /* The "Explore:" button group below banner */
-    .explore {
+        /* Right side of navbar (navigation links) */
+            .nav-right {
         display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        flex-wrap: wrap;
-
-        background-color: #ffe6ee;  /* soft pink */
-        padding: 1rem 1.5rem;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(198, 0, 80, 0.1);
-    }
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            max-width: 100%;
+            overflow-wrap: break-word;
+        }
 
 
-    .explore a {
-      text-decoration: none;
-      color: #d6336c;
-      background-color: #fff0f5;
-      padding: 0.7rem 1.2rem;
-      border-radius: 20px;
-      font-weight: bold;
-      border: 2px solid #ffb6c1;
-      transition: background-color 0.2s ease, transform 0.2s ease;
-    }
+        .nav-right a {
+            text-decoration: none;
+            color: #d6336c;
+            background-color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            border: 2px solid #ffb6c1;
+            white-space: nowrap;
+            margin-right: 0.5rem;
+        }
 
-    .explore a:hover {
-      background-color: #ffe1ea;
-      transform: translateY(-2px);
-    }
+        .nav-right a:hover {
+            background-color: #ffe1ea;
+            transform: translateY(-2px);
+        }
+
+            /* The "Explore:" button group below banner */
+        .explore {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 2rem;
+                flex-wrap: wrap;
+
+                background-color: #ffe6ee;  /* soft pink */
+                padding: 1rem 1.5rem;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(198, 0, 80, 0.1);
+        }
+
+        .explore a {
+            text-decoration: none;
+            color: #d6336c;
+            background-color: #fff0f5;
+            padding: 0.7rem 1.2rem;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid #ffb6c1;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .explore a:hover {
+            background-color: #ffe1ea;
+            transform: translateY(-2px);
+        }
   </style>
 </head>
 <body>
+    <!-- Fixed navbar at the top of page -->
   <nav class="navbar">
     <div class="nav-left">
       <a href="index.html">🌱 Radish ASMR Lore Archive</a>
@@ -167,14 +181,18 @@
     </div>
   </nav>
 
+  <!-- Main banner image -->
   <img src="images/kimochii-classroom-center.jpg" alt="Radish Banner" class="banner" />
 
+  <!-- Welcome header -->
   <div class="intro">
     <h1>🌱 Welcome to the Radish ASMR Lore Archive 🌱</h1>
   </div>
 
+  <!-- Introductory paragraph underneath header -->
   <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind <strong>Radish ASMR</strong>.</p>
 
+  <!-- Quick links explore section -->
   <div class="explore">
     <a href="timeline.md">Timeline</a>
     <a href="characters.md">Characters</a>
@@ -185,7 +203,7 @@
   <hr />
 
   <h3>❗ Disclaimer</h3>
-  <p>This is a <strong>fan-made, non-commercial</strong> site and is not affiliated with the creators of Radish ASMR.</p>
-  <blockquote>Want to help? Fork the repo, expand the doc, or submit corrections!</blockquote>
+  <p>This is a <strong>fan-made, non-commercial</strong> site and is not affiliated with the creator(s) of Radish ASMR.</p>
+  <blockquote>Do you want to help? Fork the repo, expand the doc, submit corrections, or message @Peyturtle on Discord!</blockquote>
 </body>
 </html>
