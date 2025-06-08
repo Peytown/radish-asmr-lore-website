@@ -2,19 +2,19 @@
   <img height="200" src="https://i.imgur.com/YAO0DdB.jpeg"/>
 </div>
 <div align="center">
-  <a href="https://x.com/RadishAsmr" target="_blank">
+  <a href="https://x.com/RadishAsmr" target="blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"/>
   </a>
-  <a href="https://discord.gg/jUnD5myybt" target="_blank">
+  <a href="https://discord.gg/jUnD5myybt" target="blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"/>
   </a>
-  <a href="https://www.youtube.com/@radishasmr9622" target="_blank">
+  <a href="https://www.youtube.com/@radishasmr9622" target="blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"/>
   </a>
-  <a href="https://www.instagram.com/radishasmr" target="_blank">
+  <a href="https://www.instagram.com/radishasmr" target="blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"/>
   </a>
-  <a href="https://www.patreon.com/c/radishasmr/home" target="_blank">
+  <a href="https://www.patreon.com/c/radishasmr/home" target="blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/patreon/default.svg" width="52" height="40" alt="patreon logo"/>
   </a>
 </div>
