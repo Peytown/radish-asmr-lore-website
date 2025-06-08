@@ -1,21 +1,21 @@
 <div align="center">
-  <img height="200" src="https://media.discordapp.net/attachments/747566772173144174/1377130460160725085/channels4_profile.jpg?ex=6837d82f&is=683686af&hm=0af3fe982c109c0e78ba55e21aa5c92caf861233b700691dd2d9f926726a0307&=&format=webp"  />
+  <img height="200" src="https://i.imgur.com/YAO0DdB.jpeg"/>
 </div>
 <div align="center">
   <a href="https://x.com/RadishAsmr" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/twitter/default.svg" width="52" height="40" alt="twitter logo"/>
   </a>
   <a href="https://discord.gg/jUnD5myybt" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" height="40" alt="discord logo"/>
   </a>
   <a href="https://www.youtube.com/@radishasmr9622" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" height="40" alt="youtube logo"/>
   </a>
   <a href="https://www.instagram.com/radishasmr" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/instagram/default.svg" width="52" height="40" alt="instagram logo"/>
   </a>
   <a href="https://www.patreon.com/c/radishasmr/home" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/patreon/default.svg" width="52" height="40" alt="patreon logo"  />
+    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/patreon/default.svg" width="52" height="40" alt="patreon logo"/>
   </a>
 </div>
 
@@ -30,37 +30,37 @@
 # 🌱 Radish ASMR Lore Archive
 
 A community-driven fan project dedicated to documenting, organizing, and preserving the complex lore of **Radish ASMR**.  
-This site serves as a structured companion to the YouTube videos, social media, community posts, and hidden transmissions that make up the world of Radish.
+This site serves as a structured companion to the YouTube videos, social media, community posts, and hidden transmissions that make up the world of Radish maintained by Peyturtle.
 
 ---
 
-## 📚 What This Project Covers
+## What This Project Covers
 
 - A full, updated timeline of events from the moment the series started
+- Content explainations, including ciphers, transmission logs, and general comments
 - Character breakdowns (Akemi, Annabelle, Sakura, etc.)
-- “Transmission” logs and ciphers
 - Fan theories, riddles, and analysis
 - Archive of the original community Google Doc, expanded and refined
 
 ---
 
-## ✨ Community-Driven
+## Community-Driven
 
 This is a fan initiative built with love and curiosity by followers of the Radish ASMR series.  
 This is my first time creating something like this, so if you'd like to contribute content, fix typos, or in your own ways, feel free to fork the repo and submit a pull request or message me on discord **@Peyturtle**!
 
 ---
 
-## ❗ Important Notice
+## Important Notice
 
 This is a **non-commercial, fan-created project**.  
-We are not affiliated with the original creators of Radish ASMR.  
+I am not affiliated with the original creators of Radish ASMR.  
 All original content, including images, names, and characters, belongs to the rightful owner(s).  
 This site exists purely as an archival and analytical tool for educational and entertainment purposes for those who want to get into the world of Radish ASMR.
 
 ---
 
-## 📝 License
+## License
 
 This repository is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**.
 
