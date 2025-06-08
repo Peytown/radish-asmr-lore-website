@@ -1,0 +1,165 @@
+
+/* Global body styles */
+        body {
+            font-family: 'Fredoka', sans-serif;
+            background-color: #fff0f5;
+            color: #2b2b2b;
+            margin: 0;
+            padding: 5rem 2rem 2rem 2rem; /* Padding top accounts for navbar */
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Headings */
+        h1 {
+            color: #d6336c;
+            font-size: 2rem;
+            margin-top: 1rem;
+        }
+
+        h3 {
+            color: #b30059;
+            margin-top: 2rem;
+        }
+
+        /* Link styles */
+        a {
+            color: #d6336c;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+      text-decoration: underline;
+         }
+
+        ul {
+      padding-left: 1.5rem;
+        }
+
+
+    /* Quote block style */
+        blockquote {
+            border-left: 4px solid #ff85a2;
+            padding-left: 1rem;
+            color: #555;
+            font-style: italic;
+            background-color: #ffe6ee;
+            margin: 1rem 0;
+        }
+
+        /* Horizontal rule for seperating content */
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #f0b6c2;
+            margin: 2rem 0;
+        }
+
+        /* ===== Banner & Intro Section ===== */
+        .banner {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Intro container with centered text */
+        .intro {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Fixed top navbar */
+        .navbar {
+            position: static;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #ffe6ee;
+            padding: 1rem 1rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            border-radius: 0 0 12px 12px;
+        }
+
+        /* Left side of the navbar (site title) */
+        .nav-left a {
+            font-weight: bold;
+            color: #b30059;
+            font-size: 1.2rem;
+        }
+
+        /* Right side of navbar (navigation links) */
+            .nav-right {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            max-width: 100%;
+            overflow-wrap: break-word;
+        }
+
+
+        .nav-right a {
+            text-decoration: none;
+            color: #d6336c;
+            background-color: #ffffff;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+            border: 2px solid #ffb6c1;
+            white-space: nowrap;
+            margin-right: 0.5rem;
+        }
+
+        .nav-right a:hover {
+            background-color: #ffe1ea;
+            transform: translateY(-2px);
+        }
+
+        .nav-right a.active {
+            background-color: #d6336c;  /* darker pink for active */
+            color: white;
+            border-color: #b30059;
+            cursor: default;            /* make it look unclickable */
+            pointer-events: none;       /* disable clicks on active */
+            transform: none;            /* remove hover effects */
+        }
+
+
+        /* The "Explore:" button group below banner */
+        .explore {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                margin-bottom: 2rem;
+                flex-wrap: wrap;
+                background-color: #ffe6ee;  /* soft pink */
+                padding: 1rem 1.5rem;
+                border-radius: 12px;
+                box-shadow: 0 2px 8px rgba(198, 0, 80, 0.1);
+        }
+
+        .explore a {
+            text-decoration: none;
+            color: #d6336c;
+            background-color: #fff0f5;
+            padding: 0.7rem 1.2rem;
+            border-radius: 20px;
+            font-weight: bold;
+            border: 2px solid #ffb6c1;
+            transition: background-color 0.2s ease, transform 0.2s ease;
+        }
+
+        .explore a:hover {
+            background-color: #ffe1ea;
+            transform: translateY(-2px);
+        }
