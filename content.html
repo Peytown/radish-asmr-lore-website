@@ -25,7 +25,7 @@
     </div>
   </nav>
 
-  <img src="images/girlfriend-spoils-under-covers.png" alt="Content Banner" class="section-image"/>
+  <img src="images/girlfriend-spoils-under-covers.png" alt="Content Banner" class="section-image fade-in-section"/>
 
   <div class="intro">
     <h1>Content</h1>
@@ -34,5 +34,30 @@
   <main>
     <p>This section will cover the various content pieces related to Radish ASMR. Stay tuned for updates!</p>
   </main>
+
+  <script>
+  const faders = document.querySelectorAll('.fade-in-section');
+
+  const appearOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -50px 0px"
+  };
+
+  const appearOnScroll = new IntersectionObserver(function(
+    entries,
+    observer
+  ) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, appearOptions);
+
+  faders.forEach(fader => {
+    appearOnScroll.observe(fader);
+  });
+</script>
+
 </body>
 </html>
