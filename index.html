@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <!-- Fixed navbar at the top of page -->
   <nav class="navbar">
     <div class="nav-left">
       <a href="index.html">🌱 Radish ASMR Lore Archive</a>
@@ -27,20 +26,16 @@
     </div>
   </nav>
 
-  <!-- Main banner image -->
   <div class="fade-in-section">
     <img src="images/radish-channel-banner.png" alt="Radish Banner" class="banner section-image fade-in-section"/>
   </div>  
   
-  <!-- Welcome header -->
   <div class="intro">
     <h1>🌱 Welcome to the Radish ASMR Lore Archive 🌱</h1>
   </div>
 
-  <!-- Introductory paragraph underneath header -->
   <p>This site is a community-driven effort to catalog, analyze, and preserve the deep and unsettling lore behind the Youtube channel <strong>Radish ASMR</strong>.</p>
 
-  <!-- Quick links explore section -->
   <div class="explore">
     <a href="timeline.html">Timeline</a>
     <a href="characters.html">Characters</a>
@@ -49,41 +44,37 @@
     <a href="about.html">About</a>
   </div>
 
-<section class="social-cards">
-  <h2>Follow Radish ASMR</h2>
-  <div class="card-container">
-    <a href="https://www.youtube.com/@radishasmr9622" class="card youtube" target="_blank" rel="noopener" aria-label="YouTube">
-      <i class="fab fa-youtube"></i>
-    </a>
-    <a href="https://twitter.com/radishasmr" class="card twitter" target="_blank" rel="noopener" aria-label="Twitter">
-      <i class="fab fa-twitter"></i>
-    </a>
-    <a href="https://www.instagram.com/radishasmr" class="card instagram" target="_blank" rel="noopener" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://www.tiktok.com/@radish_asmr" class="card tiktok" target="_blank" rel="noopener" aria-label="TikTok">
-      <i class="fab fa-tiktok"></i>
-    </a>
-    <a href="https://www.patreon.com/c/radishasmr/home" class="card patreon" target="_blank" rel="noopener" aria-label="Patreon">
-      <i class="fab fa-patreon"></i>
-    </a>
-    <a href="https://soundcloud.com/akemi-akemi-10996670" class="card soundcloud" target="_blank" rel="noopener" aria-label="SoundCloud">
-      <i class="fab fa-soundcloud"></i>
-    </a>
-  </div>
-</section>
-
-
+  <section class="social-cards">
+    <h2>Follow Radish ASMR</h2>
+    <div class="card-container">
+      <a href="https://www.youtube.com/@radishasmr9622" class="card youtube" target="_blank" rel="noopener" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://twitter.com/radishasmr" class="card twitter" target="_blank" rel="noopener" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/radishasmr" class="card instagram" target="_blank" rel="noopener" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@radish_asmr" class="card tiktok" target="_blank" rel="noopener" aria-label="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.patreon.com/c/radishasmr/home" class="card patreon" target="_blank" rel="noopener" aria-label="Patreon">
+        <i class="fab fa-patreon"></i>
+      </a>
+      <a href="https://soundcloud.com/akemi-akemi-10996670" class="card soundcloud" target="_blank" rel="noopener" aria-label="SoundCloud">
+        <i class="fab fa-soundcloud"></i>
+      </a>
+    </div>
+  </section>
 
   <h3>❗ Disclaimer</h3>
   <p>This is a <strong>fan-made, non-commercial</strong> site and is not affiliated with the creator(s) of Radish ASMR.</p>
   <blockquote>Do you want to help? Fork the repo, submit corrections, put your theories on Discord, or message @Peyturtle on Discord!</blockquote>
 
   <script>
-  // Get current page filename, e.g. 'timeline.md' or 'content.html'
   const currentPage = window.location.pathname.split('/').pop();
 
-  // Select all nav links in the navbar
   const navLinks = document.querySelectorAll('.nav-right a');
 
   navLinks.forEach(link => {
@@ -115,6 +106,7 @@
     appearOnScroll.observe(fader);
   });
   
-</script>
+  </script>
+  
 </body>
 </html>

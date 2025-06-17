@@ -1,22 +1,22 @@
 
-/* Global body styles */
 body {
     font-family: 'Fredoka', sans-serif;
     background-color: #fff0f5;
     color: #2b2b2b;
     margin: 0;
-    padding: 5rem 2rem 2rem 2rem; /* Padding top accounts for navbar */
+    padding: 5rem 2rem 2rem 2rem; 
     line-height: 1.6;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
-    /* Headings */
+    
 h1 {
     color: #d6336c;
-    font-size: 2rem;
+    font-size: 3rem;
     margin-top: 1rem;
+    text-align: center;
 }
 
 h3 {
@@ -24,7 +24,7 @@ h3 {
     margin-top: 2rem;
 }
 
-    /* Link styles */
+    
 a {
     color: #d6336c;
     text-decoration: none;
@@ -39,8 +39,6 @@ ul {
     padding-left: 1.5rem;
 }
 
-
-    /* Quote block style */
 blockquote {
     border-left: 4px solid #ff85a2;
     padding-left: 1rem;
@@ -50,7 +48,6 @@ blockquote {
     margin: 1rem 0;
 }
 
-    /* Horizontal rule for seperating content */
 hr {
     border: none;
     height: 1px;
@@ -58,7 +55,6 @@ hr {
     margin: 2rem 0;
 }
 
-    /* ===== Banner & Intro Section ===== */
 .banner {
     width: 100%;
     max-width: 100%;
@@ -69,13 +65,11 @@ hr {
     display: block;
 }
 
-    /* Intro container with centered text */
 .intro {
     text-align: center;
     margin-bottom: 2rem;
 }
 
-    /* Fixed top navbar */
 .navbar {
     position: fixed;
     top: 0;
@@ -91,16 +85,15 @@ hr {
     flex-wrap: wrap;
     box-sizing: border-box;
     border-radius: 0 0 12px 12px;
+    font-size: 1.3rem
 }
 
-    /* Left side of the navbar (site title) */
 .nav-left a {
     font-weight: bold;
     color: #b30059;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
-    /* Right side of navbar (navigation links) */
 .nav-right {
     display: flex;
     flex-wrap: wrap;
@@ -136,8 +129,6 @@ hr {
     transform: none;            /* remove hover effects */
 }
 
-
-    /* The "Explore:" button group below banner */
 .explore {
     display: flex;
     justify-content: center;
@@ -208,7 +199,7 @@ hr {
 }
 
 .card {
-    font-size: 3rem; /* size of the Font Awesome icon */
+    font-size: 3rem;
     color: #d6336c;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
@@ -229,3 +220,41 @@ hr {
   white-space: nowrap;
   border: 0;
 }
+
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.character-card {
+  background: #fff0f5;
+  border: 2px solid #ffb6c1;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 240px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.character-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
