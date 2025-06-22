@@ -1,8 +1,33 @@
+:root {
+  /* Base Colors */
+  --color-white: #ffffff;
+  --color-black: #2b2b2b;
+
+  /* Pinks */
+  --pink-lightest: #fff0f5;
+  --pink-lighter: #ffe6ee;
+  --pink-light: #ffe1ea;
+  --pink-medium: #ffb6c1;
+  --pink-dark: #d6336c;
+  --pink-deep: #b30059;
+  --pink-border: #ff85a2;
+
+  /* Grays */
+  --gray-medium: #555;
+
+  /* Shadows */
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-medium: rgba(0, 0, 0, 0.1);
+  --shadow-hover: rgba(0, 0, 0, 0.25);
+  --shadow-card: rgba(0, 0, 0, 0.12);
+  --shadow-accent: rgba(198, 0, 80, 0.1);
+}
+
 /* **** Global Styles **** */
 body {
     font-family: 'Fredoka', sans-serif;
-    background-color: #fff0f5;
-    color: #2b2b2b;
+    background-color: var(--pink-lightest);
+    color: var(--color-black);
     margin: 0;
     padding: 5rem 2rem 2rem 2rem; 
     line-height: 1.6;
@@ -17,19 +42,19 @@ body {
 }
 
 h1 {
-    color: #d6336c;
+    color: var(--pink-dark);
     font-size: 2.5rem;
     margin-top: 1rem;
     text-align: center;
 }
 
 h3 {
-    color: #b30059;
+    color: var(--pink-deep);
     margin-top: 2rem;
 }
   
 a {
-    color: #d6336c;
+    color: var(--pink-dark);
     text-decoration: none;
     font-weight: bold;
 }
@@ -43,18 +68,18 @@ ul {
 }
 
 blockquote {
-    border-left: 4px solid #ff85a2;
+    border-left: 4px solid var(--pink-border);
     padding-left: 1rem;
-    color: #555;
+    color: var(--gray-medium);
     font-style: italic;
-    background-color: #ffe6ee;
+    background-color: var(--pink-lighter);
     margin: 1rem 0;
 }
 
 hr {
     border: none;
     height: 1px;
-    background-color: #f0b6c2;
+    background-color: var(--pink-medium);
     margin: 2rem 0;
 }
 
@@ -64,7 +89,7 @@ hr {
     max-width: 100%;
     border-radius: 12px;
     margin-bottom: 2rem;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 12px var(--shadow-medium);
     height: auto;
     display: block;
 }
@@ -76,13 +101,13 @@ hr {
     border-radius: 12px;
     margin-bottom: 2rem;
     transition: transform 0.4s ease, box-shadow 0.5s ease;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 12px 24px var(--shadow-card);
     display: block;
 }
 
 .section-image:hover {
     transform: scale(1.03);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+    box-shadow: 0 12px 24px var(--shadow-hover);
 }
 
 /* **** Navbar **** */
@@ -91,9 +116,9 @@ hr {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #ffe6ee;
+    background-color: var(--pink-lighter);
     padding: 1rem 1rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 8px var(--shadow-light);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -101,21 +126,21 @@ hr {
     flex-wrap: wrap;
     box-sizing: border-box;
     border-radius: 0 0 12px 12px;
-    font-size: 1.3rem
+    font-size: 1.3rem;
 }
 
 .nav-left a {
     display: inline-block;
     position: relative;
     font-weight: bold;
-    color: #b30059;
+    color: var(--pink-deep);
     font-size: 1.7rem;
     text-decoration: none;
     transition: transform 0.5s, color 0.3s ease;
 }
 
 .nav-left a:hover {
-    color: #d6336c;
+    color: var(--pink-dark);
     transform: translateY(-2px);
     text-decoration: none;
 }
@@ -130,29 +155,29 @@ hr {
 
 .nav-right a {
     text-decoration: none;
-    color: #d6336c;
-    background-color: #ffffff;
+    color: var(--pink-dark);
+    background-color: var(--color-white);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-weight: bold;
     transition: background-color 0.2s ease, transform 0.2s ease;
-    border: 2px solid #ffb6c1;
+    border: 2px solid var(--pink-medium);
     white-space: nowrap;
     margin-right: 0.5rem;
 }
 
 .nav-right a:hover {
-    background-color: #ffe1ea;
+    background-color: var(--pink-light);
     transform: translateY(-2px);
 }
 
 .nav-right a.active {
-    background-color: #d6336c;  /* darker pink for active */
-    color: white;
-    border-color: #b30059;
-    cursor: default;            /* make it look unclickable */
-    pointer-events: none;       /* disable clicks on active */
-    transform: none;            /* remove hover effects */
+    background-color: var(--pink-dark);
+    color: var(--color-white);
+    border-color: var(--pink-deep);
+    cursor: default;
+    pointer-events: none;
+    transform: none;
 }
 
 /* **** Explore Buttons **** */
@@ -162,25 +187,25 @@ hr {
     gap: 1rem;
     margin-bottom: 2rem;
     flex-wrap: wrap;
-    background-color: #ffe6ee;  /* soft pink */
+    background-color: var(--pink-lighter);
     padding: 1rem 1.5rem;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(198, 0, 80, 0.1);
+    box-shadow: 0 2px 8px var(--shadow-accent);
 }
 
 .explore a {
     text-decoration: none;
-    color: #d6336c;
-    background-color: #fff0f5;
+    color: var(--pink-dark);
+    background-color: var(--pink-lightest);
     padding: 0.7rem 1.2rem;
     border-radius: 20px;
     font-weight: bold;
-    border: 2px solid #ffb6c1;
+    border: 2px solid var(--pink-medium);
     transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .explore a:hover {
-    background-color: #ffe1ea;
+    background-color: var(--pink-light);
     transform: translateY(-2px);
 }
 
@@ -213,14 +238,14 @@ hr {
 
 .card {
     font-size: 3rem;
-    color: #d6336c;
+    color: var(--pink-dark);
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .card:hover {
     transform: scale(1.2);
-    color: #b30059;
+    color: var(--pink-deep);
 }
 
 /* **** Visually Hidden for Accessibility **** */
@@ -244,19 +269,19 @@ hr {
 }
 
 .character-card {
-    background: #fff0f5;
-    border: 2px solid #ffb6c1;
+    background: var(--pink-lightest);
+    border: 2px solid var(--pink-medium);
     border-radius: 12px;
     padding: 1rem;
     width: 240px;
     text-align: center;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px var(--shadow-medium);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .character-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 20px var(--shadow-hover);
 }
 
 .character-card img {
@@ -274,16 +299,16 @@ hr {
 }
 
 .component-link {
-    color: #b30059;
+    color: var(--pink-deep);
     font-weight: bold;
     text-decoration: none;
-    border-bottom: 2px dotted #ffb6c1;
+    border-bottom: 2px dotted var(--pink-medium);
     transition: color 0.2s ease, border-color 0.2s ease;
 }
 
 .component-link:hover {
-    color: #d6336c;
-    border-color: #d6336c;
+    color: var(--pink-dark);
+    border-color: var(--pink-dark);
     text-decoration: none;
 }
 
