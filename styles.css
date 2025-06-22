@@ -1,4 +1,4 @@
-
+/* **** Global Styles **** */
 body {
     font-family: 'Fredoka', sans-serif;
     background-color: #fff0f5;
@@ -11,7 +11,11 @@ body {
     margin-right: auto;
 }
 
-    
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
 h1 {
     color: #d6336c;
     font-size: 2.5rem;
@@ -23,8 +27,7 @@ h3 {
     color: #b30059;
     margin-top: 2rem;
 }
-
-    
+  
 a {
     color: #d6336c;
     text-decoration: none;
@@ -55,6 +58,7 @@ hr {
     margin: 2rem 0;
 }
 
+/* **** Images & Media **** */
 .banner {
     width: 100%;
     max-width: 100%;
@@ -65,11 +69,23 @@ hr {
     display: block;
 }
 
-.intro {
-    text-align: center;
+.section-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
     margin-bottom: 2rem;
+    transition: transform 0.4s ease, box-shadow 0.5s ease;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    display: block;
 }
 
+.section-image:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+/* **** Navbar **** */
 .navbar {
     position: fixed;
     top: 0;
@@ -89,9 +105,19 @@ hr {
 }
 
 .nav-left a {
+    display: inline-block;
+    position: relative;
     font-weight: bold;
     color: #b30059;
     font-size: 1.7rem;
+    text-decoration: none;
+    transition: transform 0.5s, color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #d6336c;
+    transform: translateY(-2px);
+    text-decoration: none;
 }
 
 .nav-right {
@@ -129,6 +155,7 @@ hr {
     transform: none;            /* remove hover effects */
 }
 
+/* **** Explore Buttons **** */
 .explore {
     display: flex;
     justify-content: center;
@@ -157,22 +184,7 @@ hr {
     transform: translateY(-2px);
 }
 
-.section-image {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 12px;
-    margin-bottom: 2rem;
-    transition: transform 0.4s ease, box-shadow 0.5s ease;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
-    display: block;
-}
-
-.section-image:hover {
-    transform: scale(1.03);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
-}
-
+/* **** Fade-in Animations **** */
 .fade-in-section {
     opacity: 0;
     transform: translateY(10px);
@@ -182,9 +194,10 @@ hr {
 
 .fade-in-section.is-visible {
     opacity: 1;
-/* transform: translateY(0px); */
+    /* transform: translateY(0px); */
 }
 
+/* **** Social Cards **** */
 .social-cards {
     text-align: center;
     margin-top: 3rem;
@@ -210,6 +223,7 @@ hr {
     color: #b30059;
 }
 
+/* **** Visually Hidden for Accessibility **** */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -221,6 +235,7 @@ hr {
   border: 0;
 }
 
+/* **** Characters Section **** */
 .character-container {
   display: flex;
   flex-wrap: wrap;
