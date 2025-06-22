@@ -27,12 +27,127 @@
 
 <img src="images/chi-timeline.png" alt="Timeline image" class="section-image fade-in-section">
 
-  <div class="intro">
+<div class="intro">
     <h1>Timeline</h1>
   </div>
 
   <main>
-    <p>This section will cover the timeline of Radish ASMR. Stay tuned for updates!</p>
+      <p> Stay tunes for more updates within the timeline section!</p>  
+        <!-- !! **** Soon to be timeline, heavy W.I.P. **** !! -->
+        <!-- <section class="timeline-section">
+        <h1>Timeline</h1>
+        <div class="timeline-container">
+          <div class="timeline-line"></div>
+          
+          <div class="timeline-entry left">
+            <div class="timeline-date">2025</div>
+            <div class="timeline-box highlight">
+              <h3>Major Event in 2025</h3>
+              <p>[Placeholder for a key event in 2025]</p>
+            </div>
+          </div>
+          <div class="timeline-entry right">
+            <div class="timeline-box">
+              <h3>Minor Event in 2025</h3>
+              <p>[Placeholder for a less critical event in 2025]</p>
+            </div>
+          </div>
+
+          <div class="timeline-entry left">
+            <div class="timeline-date">2024</div>
+            <div class="timeline-box">
+              <h3>Event in 2024</h3>
+              <p>[Placeholder description]</p>
+            </div>
+          </div>
+
+          <div class="timeline-entry right">
+            <div class="timeline-date">2023</div>
+            <div class="timeline-box highlight">
+              <h3>Significant Upload or Theory in 2023</h3>
+              <p>[Placeholder for a key upload or theory that year]</p>
+            </div>
+          </div>
+
+          <div class="timeline-entry left">
+            <div class="timeline-date">2015</div>
+            <div class="timeline-box">
+              <h3>Earliest Mention</h3>
+              <p>[Placeholder for the earliest known event in the lore]</p>
+            </div>
+          </div>
+        </div>
+    </section> -->
+
+    <style>
+      .timeline-container {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 2rem 0;
+      }
+
+      .timeline-line {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        width: 4px;
+        background-color: #d6336c;
+        transform: translateX(-50%);
+      }
+
+      .timeline-entry {
+        padding: 1rem 2rem;
+        position: relative;
+        width: 50%;
+      }
+
+      .timeline-entry.left {
+        left: 0;
+        text-align: right;
+      }
+
+      .timeline-entry.right {
+        left: 50%;
+        text-align: left;
+      }
+
+      .timeline-date {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        color: #b30059;
+      }
+
+      .timeline-box {
+        background: #fff0f5;
+        padding: 1rem;
+        border-radius: 12px;
+        border: 2px solid #ffb6c1;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      }
+
+      .timeline-box.highlight {
+        border-color: #d6336c;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      }
+
+      @media screen and (max-width: 768px) {
+        .timeline-entry,
+        .timeline-entry.left,
+        .timeline-entry.right {
+          width: 100%;
+          left: 0;
+          text-align: left;
+          padding: 1rem 1rem;
+        }
+
+        .timeline-line {
+          left: 8px;
+        }
+      }
+    </style>
+
   </main>
 
   <script>
